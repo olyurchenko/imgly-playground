@@ -7,7 +7,8 @@ import {
 import CreativeEditorSDK, { Configuration } from '@cesdk/cesdk-js';
 
 const IMAGE_URL =
-  'https://sl-chat-image-production.s3.amazonaws.com/fb769c43-b2b0-466f-bf77-b2bbd58316c5.jpeg';
+  `${window.location.origin}/s3-image/5b24ef39-4072-452e-b66a-99d9d008e419.jpg`;
+
 
 @Component({
   selector: 'app-root',

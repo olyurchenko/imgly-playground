@@ -82,12 +82,16 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.js"
+          },
           "configurations": {
             "production": {
               "buildTarget": "imgly-editor:build:production"
             },
             "development": {
-              "buildTarget": "imgly-editor:build:development"
+              "buildTarget": "imgly-editor:build:development",
+              "proxyConfig": "proxy.conf.js"
             }
           },
           "defaultConfiguration": "development"
